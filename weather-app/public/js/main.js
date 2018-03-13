@@ -5,10 +5,6 @@ var $cityTemp = $('#city-temperature')
 var $cityHumidity = $('#city-humidity')
 var httpClient = axios.create()
 
-// function kToF(k) {
-//     return (k * 9/5) - 459.67
-// }
-
 $searchBtn.on('click', () => {
     const city = $searchInput.val()
     const options = { url: `/weather/${city}`}
